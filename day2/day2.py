@@ -33,7 +33,7 @@ for t in tuples:
     else:
         seq = []
 
-    print(seq)
+    #print(seq)
     parts_of_number = []
     for num in seq:
         s = str(num)
@@ -69,7 +69,7 @@ for t in tuples:
     else:
         seq = []
 
-    print(seq)
+    #print(seq)
     parts_of_number = []
     for num in seq:
         s = str(num)
