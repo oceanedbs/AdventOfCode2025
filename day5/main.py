@@ -46,6 +46,7 @@ new_fresh_ID=[]
 
 prev_fresh = fresh_ID[0]
 
+# Merge overlapping intervals
 for fresh in fresh_ID[1:]:
     print(prev_fresh, fresh)
     if fresh[0]<=prev_fresh[1]+1:
@@ -61,6 +62,7 @@ for fresh in fresh_ID[1:]:
 new_fresh_ID.append(prev_fresh)
 print(new_fresh_ID)
 
+# Count total fresh IDs
 for fresh in new_fresh_ID:
     n_total_fresh_ID += fresh[1]-fresh[0]+1
 
